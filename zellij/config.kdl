@@ -1,0 +1,62 @@
+// My Zellij Config
+// Scott Rice
+// Started: 2023-12-16
+// Updated: 
+// 
+// Located in: ~/.config/zellij
+//
+//-----------------------------------------------
+// UI AND APPEARANCE:
+ui {
+    pane_frames {
+        hide_session_name false
+    }
+}
+
+theme "dark-nord"
+
+//-----------------------------------------------
+// KEY BINDINGS:
+keybinds {
+	normal {
+        bind "Alt j" {FocusNextPane; }
+        bind "Alt k" {FocusPreviousPane ; }
+		bind "Alt x" { CloseFocus; }
+		bind "Alt 1" { GoToTab 1; }
+		bind "Alt 2" { GoToTab 2; }
+		bind "Alt 3" { GoToTab 3; }
+		bind "Alt 4" { GoToTab 4; }
+		bind "Alt 5" { GoToTab 5; }
+		bind "Alt 6" { GoToTab 6; }
+		bind "Ctrl t" { NewTab; }
+		bind "Alt q" { CloseTab; }
+		bind "Ctrl n" { GoToNextTab; }
+		bind "Ctrl k" { GoToPreviousTab; }
+		// bind "Alt t" { GoToNextTab; }
+    }
+	search {
+		bind "Ctrl /" { SwitchToMode "Normal"; }
+		bind "j" "Down" { ScrollDown; }
+		bind "k" "Up" { ScrollUp; }
+		bind "Ctrl f" "PageDown" "Right" "l" { PageScrollDown; }
+		bind "Ctrl b" "PageUp" "Left" "h" { PageScrollUp; }
+		bind "d" { HalfPageScrollDown; }
+		bind "u" { HalfPageScrollUp; }
+		bind "n" { Search "down"; }
+		bind "p" { Search "up"; }
+		bind "c" { SearchToggleOption "CaseSensitivity"; }
+		bind "w" { SearchToggleOption "Wrap"; }
+		bind "o" { SearchToggleOption "WholeWord"; }
+	}
+	entersearch {
+		bind "Ctrl s" "Esc" { SwitchToMode "Scroll"; }
+		bind "Enter" { SwitchToMode "Search"; }
+	}
+	renametab {
+		bind "Ctrl c" { SwitchToMode "Normal"; }
+		bind "Esc" { UndoRenameTab; SwitchToMode "Tab"; }
+	}
+	shared_except "locked" {
+		bind "Ctrl x" { SwitchToMode "Normal"; }
+	}
+}
