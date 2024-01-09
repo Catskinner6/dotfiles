@@ -27,7 +27,7 @@ sudo zypper dup
 
 7.  Install git and Curl
 ```
-sudo zypper in git and curl
+sudo zypper in git gh curl
 ```
 8.  Download and activate darkSUSE.sh Script:
 ```

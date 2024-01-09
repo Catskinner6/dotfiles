@@ -42,7 +42,7 @@
 #
 # Install Config Files
 #   LightDM
-#   Aweseom
+#   Awesome
 #   Rofi
 #   Thunar
 #
