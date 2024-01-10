@@ -22,7 +22,6 @@ return {
 
     vim.keymap.set('n', '<C-f>', ':NvimTreeFindFileToggle<CR>')
     vim.keymap.set('n', '<leader>e', ':NvimTreeFindFileToggle<CR>') -- nvim tree removes ":Ex" cmd
-    vim.keymap.set('n', '<ALT-e>', ':NvimTreeFocus<CR>') -- nvim tree removes ":Ex" cmd
 --    vim.keymap.set('n', '<C-r>', api.tree.change_root_to_parent,        opts('Up'))
 --    vim.keymap.set('n', '?',     api.tree.toggle_help,                  opts('Help'))
     end,
