@@ -1,0 +1,17 @@
+themes {
+    dark-nord {
+        fg "#2f2f2f"
+        bg "#2E3440"
+        black "#1a1a1a"
+        red "#aa4400"
+        //red "#aa0000"
+        green "#607d47"
+        yellow "#EBCB8B"
+        blue "#81A1C1"
+        magenta "#B48EAD"
+        cyan "#88C0D0"
+        white "#4c4c4c"
+        //orange "#aa4400"
+        orange "#Db9100"
+    }
+}
