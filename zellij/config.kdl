@@ -13,7 +13,8 @@ ui {
     }
 }
 
-theme "dark-nord"
+// theme "dark-nord"
+// example of how to set a theme in HEX format
 
 //-----------------------------------------------
 // KEY BINDINGS:
