@@ -1,6 +1,6 @@
 = Linux Structure
 
-== Base System
+== BASE SYSTEM SETUP
 === File System & Partitions
 * BTRFS
 
@@ -28,7 +28,7 @@
     **Dotfiles?
 * .config
 
-== APPS / Structures
+== APPS & PACKAGES
 === DE/WM
 * Hyprland
 * Waybar
