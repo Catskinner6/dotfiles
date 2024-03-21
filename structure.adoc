@@ -60,6 +60,7 @@
 * rust
 * zig
 * python - anaconda - spyder?
+* Hugo
 * julia
 * simulink
 * VM - qemu/kvm
