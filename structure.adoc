@@ -1,0 +1,127 @@
+= Linux Structure
+
+== Base System
+=== File System & Partitions
+* BTRFS
+
+* Boot - fat32
+* Swap?
+* /root
+* /Home
+* /Games
+
+=== /Home files
+* Desktop?
+* Personal
+* Business
+* Research
+* Classes
+* Downloads
+* Media
+    ** sysImg
+        *** wallpapers
+        *** icons
+    ** photo
+    ** music
+    ** video
+* Repos
+    **Dotfiles?
+* .config
+
+== APPS / Structures
+=== DE/WM
+* Hyprland
+* Waybar
+* sddm - login manager
+* swaylock - lock screen
+* 
+
+=== Terminal Apps
+* Alactritty
+* Zellij
+* Neovim + lmburns/lf.nvim
+* Hawck - global key bindings
+* AutoJump
+* trash-cli
+* starship
+* Password?
+* LF / Yazi / Felix / Joshuto - file manager
+* BTOP
+* NeoMutt - email
+* vimWiki / NeoOrg - notes?
+* Zathura - pdfs
+* swayimg / imv / feh - image previewer
+
+=== Development
+* bash
+* git
+* lua
+* go
+* rust
+* zig
+* python - anaconda - spyder?
+* julia
+* simulink
+* VM - qemu/kvm
+
+=== GUI Apps
+* Brave - plugins/theme
+* Office Suite
+* Project Libre
+* Rofi
+* Thunar
+* Bitwarden
+* Syncthing
+* Calculator
+* logSEQ
+* Inkscape
+* screen shots/snip
+* mpv / hather - media player
+* Image Viewer
+* Photo Editor
+* Calibre
+* menueditor
+* CUPS
+
+=== Flatpaks
+* Flatpak
+* Flatseal
+* Pika Backup
+* Bottles
+* Filelight
+* System Monitor
+* Zoom
+* Solaar
+
+=== App Image
+* MatLab
+
+=== Game Apps
+* Steam
+  ** Battlenet?
+* GOG
+* Discord
+* Lutris
+* Proton?
+
+=== Streaming
+* OBS
+* screen key
+* reaper / audacity
+
+=== .fonts
+* Meslo
+* NerdFonts
+* Icon Font?
+* 
+
+=== dotfiles
+* neovim
+* alacritty
+* zellij
+* Hawck
+* LF
+* NeoMutt
+* NeoOrg
+* address book
+* 
