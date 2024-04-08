@@ -9,7 +9,8 @@ TIP: BTRFS
 printf "label: gpt\n,550M,U\n,,L\n" | sfdisk /dev/sdX
 ```
 
-.Partition[source,console]
+.Partition
+[source,console]
 ----
 lsblk
 parted gpt /sdX
