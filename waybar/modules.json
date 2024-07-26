@@ -4,11 +4,10 @@
 // | |  | | (_) | (_| | |_| | |  __/\__ \ 
 // |_|  |_|\___/ \__,_|\__,_|_|\___||___/ 
 //                                        
-//  
-// by Stephan Raabe (2023)
-// Edited: Scott Rice Jul 2024
+// By Scott Rice (2024)
+// Based on "Modules" by Stephan Raabe (2023) 
 // ----------------------------------------------------- 
-//
+
 {
     // Workspaces
     "hyprland/workspaces" : {
@@ -34,7 +33,7 @@
 
     // Rofi Application Launcher
     "custom/appmenu": {
-        "format": "",
+        "format": "󰲋",
         "tooltip-format": "Left: Open the application launcher\nRight: Show all keybindings",
         "on-click": "rofi -show drun -replace",
         "on-click-right": "~/.config/scripts/keybindings.sh",
@@ -44,9 +43,9 @@
     // Power Menu
     "custom/exit": {
         "format": "",
-        "tooltip-format": "Powermenu",
+        "tooltip-format": "Power Menu",
         "on-click": "wlogout -b 4",
-        "tooltip": false
+        "tooltip": true
     },
 
     // Keyboard State
@@ -68,7 +67,7 @@
 
     // Clock
     "clock": {
-        // "timezone": "America/New_York",
+        "timezone": "America/Denver",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
@@ -79,22 +78,33 @@
         "tooltip": false
     },
 
+    // CPU Temperature
+ "temperature": {
+	 "thermal-zone": 2,
+	 "hwmon-path": ["/sys/class/hwmon/hwmon2/temp1_input", "/sys/class/thermal/thermal_zone0/temp"],
+	 "critical-threshold": 80,
+	 "format-critical": "{temperatureC}°C ",
+	"format": "{temperatureC}°C "
+}
+,
+
+
     // CPU
     "cpu": {
-        "format": "/ C {usage}% ",
+        "format": " {usage}% ",
         "on-click": "foot -e btop"
     },
 
     // Memory
     "memory": {
-        "format": "/ M {}% ",
+        "format": " {}% ",
         "on-click": "foot -e btop"
     },
 
     // Harddisc space used
     "disk": {
         "interval": 30,
-        "format": "D {percentage_used}% ",
+        "format": " {percentage_used}% ",
         "path": "/",
         "on-click": "foot -e btop"
     }, 
