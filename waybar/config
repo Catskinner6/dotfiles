@@ -23,11 +23,13 @@
     ],
     "modules-right": [
         "network", 
+        "temperature",
         "cpu", 
         "memory", 
+        "disk",
         "pulseaudio", 
         "keyboard-state", 
-//        "battery", 
+        "battery", 
         "clock", 
         "tray",
         "custom/exit"
