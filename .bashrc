@@ -4,7 +4,15 @@
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
 export PATH
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
 
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
@@ -14,10 +22,17 @@ if [ -d ~/.bashrc.d ]; then
         fi
     done
 fi
+unset rc
 
-unset
+#FEDORA TERMINAL ALIASES
+#alias din="sudo dnf install "
+#alias dun="sudo dnf remove "
+
+## UNIVERSAL ALIASES
+alias fetch="fastfetch"
 
 
-# Autostart with shell
+# AutoStart with SHELL
 eval "$(zellij setup --generate-auto-start bash)"
 eval "$(zoxide init bash)"
+eval "$(starship init bash)"
