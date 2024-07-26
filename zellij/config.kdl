@@ -9,12 +9,12 @@
 // UI AND APPEARANCE:
 ui {
     pane_frames {
-        hide_session_name false
+        hide_session_name true
     }
 }
-
-// theme "dark-nord"
-// example of how to set a theme in HEX format
+pane_frames false
+theme "molokai-dark"
+default_layout "compact"
 
 //-----------------------------------------------
 // KEY BINDINGS:
@@ -22,7 +22,7 @@ keybinds {
 	normal {
         bind "Alt j" {FocusNextPane; }
         bind "Alt k" {FocusPreviousPane ; }
-		bind "Alt x" { CloseFocus; }
+		bind "Alt q" { CloseFocus; }
 		bind "Alt 1" { GoToTab 1; }
 		bind "Alt 2" { GoToTab 2; }
 		bind "Alt 3" { GoToTab 3; }
@@ -30,7 +30,7 @@ keybinds {
 		bind "Alt 5" { GoToTab 5; }
 		bind "Alt 6" { GoToTab 6; }
 		bind "Ctrl t" { NewTab; }
-		bind "Alt q" { CloseTab; }
+		bind "Ctrl q" { CloseTab; }
 		bind "Ctrl n" { GoToNextTab; }
 		bind "Ctrl k" { GoToPreviousTab; }
 		// bind "Alt t" { GoToNextTab; }
